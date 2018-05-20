@@ -120,6 +120,13 @@ myList.on('click', function(){ //Bind click event to the matched element and run
     myList.off('click'); // unbind click event, so other elements cannot be clicked anymore
 })
 
+#16 Event Helper
+Shorter way to bind event
+e.g.
+$("#lead-banner").click(function(){ //.dblclick for double click
+    alert("You clicked me!");
+})
+
 */
 
 
