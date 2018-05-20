@@ -79,6 +79,13 @@ e.g.
 $(".button").empty();
 $("#contact-methods").empty();
 
+#12 Changing attributes
+.removeAttr() removes an attribute completely
+.attr() can read or set any attribute
+e.g.
+$("#contact img").attr("alt","changed");//change attribute from alt to changed
+$("#contact img").attr("alt");//read attribute alt, which returns the string map
+$("#contact img").removeAttr("alt")//remove the alt attribute
 */
 
 
