@@ -86,6 +86,16 @@ e.g.
 $("#contact img").attr("alt","changed");//change attribute from alt to changed
 $("#contact img").attr("alt");//read attribute alt, which returns the string map
 $("#contact img").removeAttr("alt")//remove the alt attribute
+
+#13 CSS with jQuery
+$("#social-nav").css({
+    "top": "-400px",
+    "left": "150px",
+    "opacity": "0.5",
+    "border-top": "4px solid red"
+})
 */
+
+
 
 
