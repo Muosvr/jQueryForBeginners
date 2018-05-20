@@ -42,3 +42,28 @@
 //.after() add content after element
 //.html() changes the whole html of the element
 //.text() changes the text of an element
+
+//#10 Wrap and Unwrap Elements
+// wrap() - wraps all matched elemtns individually by tag inside ()
+// unwrap() - unwraps all matched elements
+// wrapAll() - wraps all matched elements inside 1 single element using tag indicated in ()
+//e.g.
+// $("section").wrap('<div>');
+// $("section").unwrap();
+// $("section").wrapAll('<div>');
+
+var wrapper = "<div class='wrapper'>";
+var button = $(".button");
+var wrapped = true;
+
+button[0].onclick = function(){
+    if (wrapped === true){
+        $("section").unwrap();
+        wrapped = false;
+        button.text('Wrap')
+    }else {
+        $("section").wrap(wrapper);
+        wrapped = true;
+        button.text('Unwrap');
+    }
+}
