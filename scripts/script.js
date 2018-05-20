@@ -112,6 +112,14 @@ button[0].onclick = (function(){
     return false;
 })
 
+#15 Binding and unbinding events
+var myList = $("#points-of-sale li"); //find the li tags inside points-of-sale id store in myList
+
+myList.on('click', function(){ //Bind click event to the matched element and run function
+    $(this).css("background", "pink"); // find the element and use css to turn background into pink
+    myList.off('click'); // unbind click event, so other elements cannot be clicked anymore
+})
+
 */
 
 
