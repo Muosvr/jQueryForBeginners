@@ -94,8 +94,24 @@ $("#social-nav").css({
     "opacity": "0.5",
     "border-top": "4px solid red"
 })
+
+#14 Adding & Removing Classes
+removeClass() - removes a class from the matched elements(s)
+addClass() - adds a class to the matched element(s)
+toggleClass - toggles the class on and off on their matched element(s)
+
+e.g.
+$("header .wrapper").removeClass("wrapper"); //remove the class wrapper from the element inside the header tag that with the class wrapper
+$("header > div").addClass("wrapper");//Go to the header and find the immediate next child that is a div tag and add the class wrapper to it
+
+$("#points-of-sale").attr("style","height:0; overflow:hidden");
+var button = $("#lead-banner a");
+button[0].onclick = (function(){
+    $("#points-of-sale").toggleClass("open");
+    console.log($("#lead-banner a"));
+    return false;
+})
+
 */
-
-
 
 
