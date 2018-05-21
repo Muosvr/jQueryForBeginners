@@ -127,6 +127,17 @@ $("#lead-banner").click(function(){ //.dblclick for double click
     alert("You clicked me!");
 })
 
+#17 Document Ready vs Window Load
+
+These three lines mean the same thing: load function when document is ready
+$(document).on("ready",function(){});
+$(document).ready(function(){});
+$(function(){});
+
+These wait till everything, including images, are loaded 
+$(window).on("load",function(){});
+$(window).load(function(){});
+
 */
 
 
