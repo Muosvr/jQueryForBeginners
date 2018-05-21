@@ -209,8 +209,29 @@ $(document).ready(function(){
     });
 });
 
+#23 Fading Animations Example
+$(document).ready(function(){
+    var allQuotes = $("blockquote");
+    var currentQuote = 0;
+    
+    function changeQuote(){
+      $(allQuotes[currentQuote]).fadeOut(200, function(){
+          if(currentQuote == allQuotes.length - 1){
+          currentQuote = 0;
+          }else {
+              currentQuote++;
+          }
+      
+      $(allQuotes[currentQuote]).fadeIn(200);
+      }); //use jQuery wrapper to wrap the selected HTML value: allQuotes[currentQuote], so fadeOut can be applied 
+        
+      
+        
+    }
+    
+    var quoteTimer = setInterval(changeQuote, 3000)//setting interval to call function
+});
+
 */
-
-
 
 
