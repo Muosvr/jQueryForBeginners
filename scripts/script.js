@@ -161,9 +161,28 @@ function complete(){
            alert("Animation complete");
 }
 
+#20 Fading Elements In & Out
+$(document).ready(function(){
+    $("section > h2").on("click",function(){
+        $(this).animate({"opacity": "0.5"}); // 0: transparent, 1: opaque
+        $(this).fadeOut();//makes an element disappear
+        $(this).fadeOut().fadeIn();//fades out then fades in
+        $(this).fadeOut(2000).fadeIn(500) // adding speed
+        $(this).fadeTo(1000,0.2)//specify speed and opacity to fade to
+        
+        //multiples
+        $(this).fadeTo(200,0.2)
+               .fadeTo(200,0.8)
+               .fadeTo(200,0.2)
+               .fadeTo(200,0.8)
+               .fadeTo(200,0.2)
+               .fadeTo(200,0.8)
+               .fadeTo(200,0.2)
+               .fadeTo(200,0.8);
+    });
+});
+
 */
-
-
 
 
 
