@@ -195,6 +195,20 @@ $(document).ready(function(){
    });
 });
 
+#22 Sliding Elements
+$(document).ready(function(){
+    $(".slide-button-up").on("click",function(){
+        $("#lead-banner").slideUp(100);
+        //or use slideToggle() to toggle
+    });
+    $(".slide-button-down").on("click",function(){
+        $("#lead-banner").slideDown(4000, function(){
+        //or use slideToggle() to toggle
+            alert("animation complete");
+        });
+    });
+});
+
 */
 
 
