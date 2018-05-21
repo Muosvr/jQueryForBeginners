@@ -182,8 +182,20 @@ $(document).ready(function(){
     });
 });
 
-*/
+#21 Show Hide and Toggle
 
+$(document).ready(function(){
+   $("section > h2").on("click",function(){
+        $(this).hide(1000)// if no value is passed through, it will just disappear. If a value exist, that it shrinks, moves, and fadeOut all together
+               .show(1000); //zooms back in
+   });
+   
+   $("img[alt=map]").on("click",function(){
+      $("section > h2").toggle(1000); //state dependent hide or show
+   });
+});
+
+*/
 
 
 
