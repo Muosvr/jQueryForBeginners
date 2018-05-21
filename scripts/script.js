@@ -139,9 +139,6 @@ $(window).on("load",function(){});
 $(window).load(function(){});
 
 #18 The Event Object in jQuery
-
-*/
-
 $(document).ready(function(){
     $("*").on("click",function(e){ //"*" grabs everything in the window
         console.log(e.target);
@@ -151,4 +148,24 @@ $(document).ready(function(){
         e.stopPropagation(); // this will prevent the parents of the target to be selected as well
     });
 });
+
+#19 Animation in jQuery
+
+$(document).ready(function(){
+    $("section > h2").on("click",function(){
+       $(this).animate({"width": "500px", "height": "100px"},1000,"linear",complete); //parameter object, speed, type of animation, call back function to run when animation finishes
+    });
+});
+
+function complete(){
+           alert("Animation complete");
+}
+
+*/
+
+
+
+
+
+
 
