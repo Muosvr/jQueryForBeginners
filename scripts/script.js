@@ -232,6 +232,24 @@ $(document).ready(function(){
     var quoteTimer = setInterval(changeQuote, 3000)//setting interval to call function
 });
 
+#24 Sliding Anmation Example
+
+$(document).ready(function(){
+    var items = $("#points-of-sale li");
+    
+    items.on("click", function(){
+        
+        $(this).find("p").slideToggle(500);
+    });
+});
+
+#25 Using Plugins
+
+$(document).ready(function(){
+    $(".rslides").responsiveSlides();
+});
+
 */
+
 
 
